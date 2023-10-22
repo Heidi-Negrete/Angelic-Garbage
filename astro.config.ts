@@ -37,8 +37,4 @@ export default defineConfig({
     },
   },
   scopedStyleStrategy: "where",
-  experimental: {
-    assets: true,
-    viewTransitions: true,
-  },
 });
