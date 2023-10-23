@@ -3,11 +3,13 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-Boop boopity boop, this site is still under construction.
+I am Heidi, also known by my gamer tag "Angelic Garbage". I'm a spontaneous empath who loves coffee, learning new things, pursuing new hobbies, and keeping it real.
 
+<p>
+  Check out my
+  <LinkButton className="hover:text-skin-accent underline underline-offset-4 decoration-dashed" href="https://negrete.dev" target="_blank"> professional portfolio
+  </LinkButton>.     
+</p>
 <div>
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
 </div>
-
-I built this site with the [Astro](https://astro.build) framework!
-If you like this theme, checkout the author and star/contribute to the [repo](https://github.com/satnaing/astro-paper).

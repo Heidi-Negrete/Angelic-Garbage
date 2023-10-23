@@ -27,33 +27,9 @@ export const SOCIALS: SocialObjects = [
     active: true,
   },
   {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/heidi-negrete/",
-    linkTitle: `${SITE.title} on LinkedIn`,
-    active: true,
-  },
-  {
-    name: "Mail",
-    href: "mailto:heidinegrete@pm.me",
-    linkTitle: `Send an email to ${SITE.title}`,
-    active: true,
-  },
-  {
     name: "Twitter",
     href: "https://twitter.com/heidi_negrete",
     linkTitle: `${SITE.title} on Twitter`,
-    active: true,
-  },
-  {
-    name: "Twitch",
-    href: "https://www.twitch.tv/angelicgarbage/about",
-    linkTitle: `${SITE.title} on Twitch`,
-    active: true,
-  },
-  {
-    name: "YouTube",
-    href: "https://www.youtube.com/@angelicgarbage",
-    linkTitle: `${SITE.title} on YouTube`,
     active: true,
   },
   {
@@ -63,15 +39,33 @@ export const SOCIALS: SocialObjects = [
     active: true,
   },
   {
+    name: "YouTube",
+    href: "https://www.youtube.com/@angelicgarbage",
+    linkTitle: `${SITE.title} on YouTube`,
+    active: true,
+  },
+  {
     name: "Reddit",
     href: "https://www.reddit.com/user/Angelic-Garbage",
     linkTitle: `${SITE.title} on Reddit`,
     active: true,
   },
   {
+    name: "Twitch",
+    href: "https://www.twitch.tv/angelicgarbage/about",
+    linkTitle: `${SITE.title} on Twitch`,
+    active: true,
+  },
+  {
     name: "Steam",
     href: "https://steamcommunity.com/id/AngelicGarbage/",
     linkTitle: `${SITE.title} on Steam`,
+    active: true,
+  },
+  {
+    name: "Mail",
+    href: "mailto:heidinegrete@pm.me",
+    linkTitle: `Send an email to ${SITE.title}`,
     active: true,
   },
 ];
