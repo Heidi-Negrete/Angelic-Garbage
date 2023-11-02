@@ -12,7 +12,7 @@ tags:
 ogImage: /src/assets/images/november-23/githubxgodot.png
 ---
 
-![Github Pages and Godot Game Engine](/src/assets/images/november-23/githubxgodot.png)
+![Github Pages and Godot Game Engine](@assets/images/november-23/githubxgodot.png)
 
 # How to deploy a Godot 4 game to Github Pages
 
@@ -21,7 +21,7 @@ Here's a quick guide to publishing an HTML web build of your Godot game directly
 Before you get too far into it, just be aware that your GitHub repository needs to be public, and that the games do not seem to load on mobile, but I’m not yet sure if that’s because of Github Pages, something in my build setup, or Godot itself. _(I’ll update here if I can find a fix, or shoot me a message if you find one!)_
 
 First you will need to organize your project directory. Here's the end result we're shooting for.  
- ![Project directory structure](/src/assets/images/november-23/godot_project_setup.png)
+ ![Project directory structure](@assets/images/november-23/godot_project_setup.png)
 
 1. Create your root directory and name it whatever you like. Initialize your git repository here.
 2. Create a subdirectory named `build`, and within it a subdirectory `web`. Create an `index.html` file within `web`.
@@ -29,20 +29,15 @@ First you will need to organize your project directory. Here's the end result we
 4. If you already have a Godot project, simply move all of the project files into the project directory. If not, create your Godot project in the `project` folder, with the git option disabled (since you are initializing git yourself in a directory above).
 5. In the root directory, create a `.gitignore` file and add .godot/ to it.
 6. In the root directory, create a subdirectory `.github` and within that a subdirectory `workflows`.
-7. In `workflows` create a file called `deploy.yml` and add the configuration below. The only change you need to make is make sure the name of the branch on line 10 matches your repository branch name (usually main). On line 4 and 19, Godot's version is specified (4.1.2). Make sure those lines match your version. Double check your Godot version by clicking on Godot's 'about' menu.
-
-[](https://gist.github.com/Heidi-Negrete/23f544d20f070d69ea1fce8df91d6732.js)
-
-<script src="https://gist.github.com/Heidi-Negrete/23f544d20f070d69ea1fce8df91d6732.js"></script>
-
+7. In `workflows` create a file called `deploy.yml` and add the [configuration](https://gist.github.com/Heidi-Negrete/23f544d20f070d69ea1fce8df91d6732). The only change you need to make is make sure the name of the branch on line 10 matches your repository branch name (usually main). On line 4 and 19, Godot's version is specified (4.1.2). Make sure those lines match your version. Double check your Godot version by clicking on Godot's 'about' menu.
 8. Open your Godot project and configure it to export HTML builds. In Godot's top menu go to project > export... Add a Web preset. You may get a popup or warning prompting you to make some installations first. Go ahead and do that, and then add the Web preset. You only need to set the export path now by clicking on the folder icon and navigating back up one directory and down into build > web > select the index.html and hit save. You can now close the export window. Everything is good to go in Godot.
-   ![Configuring export settings](/src/assets/images/november-23/export_settings_webbuild.png)
+   ![Configuring export settings](@assets/images/november-23/export_settings_webbuild.png)
 
 9. When you push your repository to Github, it should automatically add the workflow you configured in workflows, and you will be able to view it's process in the 'Actions' tab. When the actions finish, go to the repository's 'Settings' > Github Pages and choose deploy from branch. You will _not_ select main, but the gh-pages branch that will be created automatically by the workflow.
-   ![Github Pages deploy from branch](/src/assets/images/november-23/github_pages_branch.png)
+   ![Github Pages deploy from branch](@assets/images/november-23/github_pages_branch.png)
 
 10. You may need to rerun the workflow. Go to the 'Actions' tab and click the three dots to rerun workflow. Assuming everything completes successfully, it will still take a few minutes, but then you should be able to visit your game from the link that you can find on the Settings > Github Pages tab of your repository!
-    ![Github Actions Workflows](/src/assets/images/november-23/github_actions.png)
+    ![Github Actions Workflows](@assets/images/november-23/github_actions.png)
 
 ## Problems and Debugging:
 
