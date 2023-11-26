@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "Heidi Negrete",
   desc: "A humble blog of assorted technical, mathematical, and creative garbage.",
   title: "Angelic Garbage",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "ag-banner-art.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,
 };
