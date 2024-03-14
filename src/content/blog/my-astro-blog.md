@@ -2,7 +2,7 @@
 title: My Astro Blog
 description: How I whipped up a blog over the weekend using the Astro web framework.
 pubDatetime: 2023-10-22T17:29:38-04:00
-featured: true
+featured: false
 tags:
   - web development
   - blog
